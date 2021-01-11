@@ -1,0 +1,16 @@
+<div class="results">
+  <div class="user header">
+    <span class="id">ID</span>
+    <span class="username">Username</span>
+    <span class="name">Name</span>
+    <span class="email">Email</span>
+    <span class="phone">Phone</span>
+  </div>
+  <div *ngFor="let user of resultData" class="user" (click)="selectUser(user)">
+    <span class="id">{{ user.id }}</span>
+    <span class="username">{{ user.username }}</span>
+    <span class="name">{{ user.name }}</span>
+    <span class="email">{{ user.email }}</span>
+    <span class="phone">{{ user.phone }}</span>
+  </div>
+</div>

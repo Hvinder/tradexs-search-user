@@ -1,0 +1,9 @@
+<input
+  type="text"
+  [ngModel]="inputName"
+  (ngModelChange)="userInputChange($event)"
+  placeholder="search by name.."
+/>
+<p>
+  selected user: <b>{{ selectedUser?.name || "Please select a user..." }}</b>
+</p>
